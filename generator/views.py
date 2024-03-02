@@ -8,8 +8,8 @@ def about(request):
     return render(request, 'generator/about.html')
 
     
-def home(request):
-    return render(request, 'generator/home.html')  
+def index(request):
+    return render(request, 'generator/index.html')  
 
 def password(request):
 
