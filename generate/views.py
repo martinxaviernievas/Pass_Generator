@@ -5,11 +5,11 @@ from django.shortcuts import render
 
 
 def about(request):
-    return render(request, 'generator/about.html')
+    return render(request, 'generate/about.html')
 
     
 def index(request):
-    return render(request, 'generator/index.html')  
+    return render(request, 'generate/index.html')  
 
 def password(request):
 
@@ -29,5 +29,5 @@ def password(request):
         generated_password += random.choice(characters)
 
 
-    return render (request, 'generator/password.html', {'password': generated_password})
+    return render (request, 'generate/password.html', {'password': generated_password})
 
